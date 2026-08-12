@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reportes - BlackSentinel</title>
+  <link rel="stylesheet" href="css/modulos.css">
+
+
+</head>
+<body>
+  <div class="container">
+    <h1>Reportes</h1>
+    <button onclick="generarReporte()">Generar Reporte</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Fecha</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>REP-001</td>
+          <td>Reporte Mensual</td>
+          <td>01/07/2026</td>
+          <td><button>Exportar PDF</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="backend/reportes.js"></script>
+  <button class="btn-regresar" onclick="window.history.back()">⬅️ Regresar</button>
+
+</body>
+</html>
+

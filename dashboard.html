@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>BlackSentinel SOC Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo BlackSentinel" class="logo">
+    <h1>BlackSentinel Security Operations Center</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="activos.html">Activos</a></li>
+      <li><a href="vulnerabilidades.html">Vulnerabilidades</a></li>
+      <li><a href="reports.html">Reportes</a></li>
+      <li><a href="configuracion.html">Configuración</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="metrics">
+      <h2>Métricas de Seguridad</h2>
+      <div class="metric-card"> Activos monitoreados: <span id="activosCount">12</span></div>
+      <div class="metric-card"> Vulnerabilidades críticas: <span id="vulnCount">5</span></div>
+      <div class="metric-card"> Reportes generados: <span id="reportCount">3</span></div>
+    </section>
+
+    <section class="charts">
+      <h2>Estadísticas</h2>
+      <canvas id="vulnChart"></canvas>
+    </section>
+
+    <section class="logs">
+      <h2>Logs del Sistema</h2>
+      <div class="log-console" id="logConsole">
+      </div>
+</section>
+
+<script src="backend/dashboard.js"></script>
+
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Vulnerabilidades - BlackSentinel</title>
+  <link rel="stylesheet" href="css/modulos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gestión de Vulnerabilidades</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Severidad</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Exposición SSH</td><td>Alta</td><td>Pendiente</td></tr>
+        <tr><td>2</td><td>Acceso FTP Anónimo</td><td>Media</td><td>Mitigada</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal para registrar vulnerabilidad -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>Registrar Vulnerabilidad</h2>
+      <label>Nombre</label>
+      <input type="text" id="nombreVuln">
+      <label>Severidad</label>
+      <select id="severidadVuln">
+        <option>Alta</option>
+        <option>Media</option>
+        <option>Baja</option>
+      </select>
+      <label>Estado</label>
+      <select id="estadoVuln">
+        <option>Pendiente</option>
+        <option>Mitigada</option>
+      </select>
+      <button onclick="registrarVulnerabilidad()">Registrar Vulnerabilidad</button>
+    </div>
+  </div>
+
+<script src="backend/vulnerabilidades.js"></script>
+
+  <button class="btn-regresar" onclick="window.history.back()">⬅️ Regresar</button>
+
+</body>
+</html>
+

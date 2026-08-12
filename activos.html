@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Activos - BlackSentinel</title>
+  <link rel="stylesheet" href="css/modulos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gestión de Activos</h1>
+    <button onclick="registrarActivo()">Registrar Activo</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Estado</th>
+          <th>Responsable</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>Servidor Principal</td>
+          <td>Activo</td>
+          <td>Admin</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="backend/activo.js"></script>
+  <button class="btn-regresar" onclick="window.history.back()">⬅️ Regresar</button>
+
+</body>
+</html>
+
